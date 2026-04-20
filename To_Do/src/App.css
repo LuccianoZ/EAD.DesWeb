@@ -1,0 +1,59 @@
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+/* ── HEADER ── */
+.header {
+  padding: 56px 0 0;
+  text-align: center;
+}
+.header-inner { position: relative; display: inline-block; }
+.header-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.header-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+.header-sub {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+  font-weight: 300;
+}
+.header-rule {
+  width: 48px;
+  height: 3px;
+  background: var(--accent);
+  margin: 28px auto 0;
+}
+
+/* ── MAIN ── */
+.main { margin-top: 40px; }
+
+/* ── TASKS SECTION ── */
+.tasks-section { margin-top: 32px; }
+
+/* ── STATE MESSAGES ── */
+.state-msg {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  font-style: italic;
+  border: 1.5px dashed var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.state-msg.error { color: var(--accent); border-color: var(--accent); background: var(--accent-light); font-style: normal; }
+.state-msg.empty { background: transparent; }
